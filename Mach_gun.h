@@ -15,6 +15,11 @@ private:
     bool Is_Available;
 
 public:
+    static int amount;
+
+    static int num_of_orders(){
+        return amount;
+    }
 
     Mach_gun(float weight, string name, int speed_bullet) {
         this->weight = weight;
