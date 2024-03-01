@@ -5,8 +5,5 @@
 
 using namespace std;
 
-void print(float weight, string name, float calibr) {
-    cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << calibr << endl;
-}
 
 #include "Snip_rifle.h"

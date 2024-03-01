@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class Sniper {
+class Snip_rifle {
 private:
     float weight;
     string name;
@@ -19,14 +19,13 @@ private:
     }
 
 public:
-
-    Sniper(Sniper &&rifle);
-
-    Sniper(float weight, string name, float calibr) {
+    Snip_rifle(float weight, string name, float calibr) {
         this->weight = weight;
         this->name = name;
         this->calibr = calibr;
-        void print(float weight, string name, float calibr);
+    }
+    void print() const{
+        cout<< "Name: " << name << "\nWeight: " << weight << "\nCalibr" << calibr <<endl;
     }
 };
 

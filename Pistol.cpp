@@ -5,7 +5,5 @@
 
 using namespace std;
 
-void print(float weight, string name, float bar_len) {
-    cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << bar_len << endl;
-}
+
 #include "Pistol.h"

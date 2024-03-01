@@ -22,7 +22,9 @@ public:
         this->weight = weight;
         this->name = name;
         this->bar_len = bar_len;
-        void print( float weight, string name, float bar_len) ;
+    }
+    void print() const{
+        cout<< "Name: " << name << "\nWeight: " << weight << "\nBarrel length: " << bar_len <<endl;
     }
 };
 

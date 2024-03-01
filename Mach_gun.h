@@ -15,13 +15,14 @@ private:
     bool Is_Available;
 
 public:
-    Mach_gun() : weight{0}, name{"null"}, speed_bullet{0} {}
 
     Mach_gun(float weight, string name, int speed_bullet) {
         this->weight = weight;
         this->name = name;
         this->speed_bullet = speed_bullet;
-        void print(float weight, string name, float speed_bullet);
+    }
+    void print() const{
+        cout<< "Name: " << name << "\nWeight: " << weight << "\nSpeed of bullet" << speed_bullet <<endl;
     }
 };
 #endif //INC_00P_MACH_GUN_H

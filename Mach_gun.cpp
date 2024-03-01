@@ -5,8 +5,7 @@
 
 using namespace std;
 
-void print(float weight, string name, float speed_bullet) {
-    cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << speed_bullet << endl;
-}
+
+
 
 #include "Mach_gun.h"
