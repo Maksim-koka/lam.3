@@ -10,20 +10,33 @@ using namespace std;
 
 class Snip_rifle {
 private:
-    float weight;
-    string name;
-    float calibr;
+    float weight = 0;
+    string name = nullptr;
+    float calibr = 0;
 
     bool Is_Available() {
         return true;
     }
 
 public:
-    Snip_rifle(float weight, string name, float calibr) {
+    Snip_rifle(float weight = 0, string name = nullptr, float calibr = 0);
+
+    void setWeight(float weight) {
         this->weight = weight;
-        this->name = name;
-        this->calibr = calibr;
     }
+    void setName(string &name) {
+        this->name = name;
+    }
+    void setCalibr(float calibr) {
+       this->calibr = calibr;
+    }
+    float getWeight() const {return weight;}
+    string getName() const {return name;}
+    float getCalibr() const {return calibr;}
+
+    void show() const;
+
+
     void print() const{
         cout<< "Name: " << name << "\nWeight: " << weight << "\nCalibr" << calibr <<endl;
     }
