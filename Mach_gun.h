@@ -21,6 +21,7 @@ public:
         this->weight = weight;
         this->name = name;
         this->speed_bullet = speed_bullet;
+        void print(float weight, string name, float speed_bullet);
     }
 };
 #endif //INC_00P_MACH_GUN_H
