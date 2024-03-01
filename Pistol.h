@@ -27,5 +27,5 @@ public:
         cout<< "Name: " << name << "\nWeight: " << weight << "\nBarrel length: " << bar_len <<endl;
     }
 };
-//
+//z
 #endif //INC_00P_PISTOL_H
