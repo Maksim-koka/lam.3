@@ -10,7 +10,7 @@ int main() {
     cin>>type;
     if(type == 1) {
         Snip_rifle Barret(12.5, "Barret", 50);
-        Barret.print();
+        Barret.show();
     }else if (type == 2) {
         Mach_gun Ak47(4.7, "AK47",78);
         Ak47.print();

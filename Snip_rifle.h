@@ -35,11 +35,6 @@ public:
     float getCalibr() const {return calibr;}
 
     void show() const;
-
-
-    void print() const{
-        cout<< "Name: " << name << "\nWeight: " << weight << "\nCalibr" << calibr <<endl;
-    }
 };
 
 //zdaa
