@@ -23,13 +23,14 @@ public:
         this->name = name;
         this->bar_len = bar_len;
     }
-    float getWeight() const {return weight;}
-    string getName() const {return name;}
-    float getBar_len() const {return bar_len;}
 
     Pistol(Pistol&& powerful) noexcept;
 
-    void show() const;
+    void show();
+
+    friend ostream& operator<<(std::ostream& os, const Pistol& Pistol) {
+        return os;
+    }
 };
 //zds
 #endif //INC_00P_PISTOL_H

@@ -13,8 +13,9 @@ Pistol::Pistol(Pistol&& powerful) noexcept
     powerful.weight = 7.2;
     powerful.name = "Digle";
     powerful.bar_len = 23.5;
-    cout<< "Name: " << powerful.name << "\nWeight: " << powerful.weight << "\nCalibr: " << powerful.bar_len <<endl;
+    cout<< "Name: " <<  powerful.name << "\nWeight: " <<  powerful.weight << "\nCalibr: " << powerful.bar_len <<endl;
 }
-void Pistol::show() const{
+
+void Pistol::show() {
     cout<< "Name: " << name << "\nWeight: " << weight << "\nCalibr: " << bar_len <<endl;
 }
