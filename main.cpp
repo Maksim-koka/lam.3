@@ -16,7 +16,7 @@ int main() {
         Ak47.print();
     }else if(type == 3) {
         Pistol PP(1.24, "PP", 23.4);
-        PP.print();
+        PP.show();
     }else{
         cout<<"Error";
     }

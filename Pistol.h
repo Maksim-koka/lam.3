@@ -23,9 +23,13 @@ public:
         this->name = name;
         this->bar_len = bar_len;
     }
-    void print() const{
-        cout<< "Name: " << name << "\nWeight: " << weight << "\nBarrel length: " << bar_len <<endl;
-    }
+    float getWeight() const {return weight;}
+    string getName() const {return name;}
+    float getBar_len() const {return bar_len;}
+
+    Pistol(const Pistol& powerful);
+
+    void show() const;
 };
 //zds
 #endif //INC_00P_PISTOL_H
