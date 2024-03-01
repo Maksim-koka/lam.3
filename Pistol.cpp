@@ -7,9 +7,14 @@ using namespace std;
 
 #include "Pistol.h"
 
-Pistol::Pistol(const Pistol& powerful) : weight(weight), bar_len(bar_len) {
+Pistol::Pistol(Pistol&& powerful) noexcept
+: weight(powerful.weight), name(powerful.name), bar_len(powerful.bar_len) {
 
+    powerful.weight = 7.2;
+    powerful.name = "Digle";
+    powerful.bar_len = 23.5;
+    cout<< "Name: " << powerful.name << "\nWeight: " << powerful.weight << "\nCalibr: " << powerful.bar_len <<endl;
 }
 void Pistol::show() const{
-    cout<< "Name: " << name << "\nWeight: " << static_cast<float>(weight) << "\nCalibr" << static_cast<float>(bar_len) <<endl;
+    cout<< "Name: " << name << "\nWeight: " << weight << "\nCalibr: " << bar_len <<endl;
 }

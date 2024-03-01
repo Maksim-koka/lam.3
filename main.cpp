@@ -17,6 +17,7 @@ int main() {
     }else if(type == 3) {
         Pistol PP(1.24, "PP", 23.4);
         PP.show();
+        cout<<"Would";
     }else{
         cout<<"Error";
     }

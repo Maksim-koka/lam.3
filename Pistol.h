@@ -27,7 +27,7 @@ public:
     string getName() const {return name;}
     float getBar_len() const {return bar_len;}
 
-    Pistol(const Pistol& powerful);
+    Pistol(Pistol&& powerful) noexcept;
 
     void show() const;
 };
