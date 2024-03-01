@@ -1,6 +1,11 @@
 #include <iostream>
+#include "Pistol.h"
+#include "Snip_rifle.h"
+#include "Mach_gun.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+
+
     return 0;
 }
