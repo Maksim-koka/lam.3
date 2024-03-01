@@ -9,6 +9,7 @@ using namespace std;
 
 class Mach_gun {
 private:
+    char *str;
     float weight;
     string name;
     int speed_bullet;
@@ -25,6 +26,12 @@ public:
         this->weight = weight;
         this->name = name;
         this->speed_bullet = speed_bullet;
+    }
+
+
+    friend ostream& operator<<(std::ostream& os, const Mach_gun& Mach_gun) {
+        os << "Amount: " << Mach_gun.speed_bullet;
+        return os;
     }
     void print() const{
         cout<< "Name: " << name << "\nWeight: " << weight << "\nSpeed of bullet" << speed_bullet <<endl;

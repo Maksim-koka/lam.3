@@ -9,4 +9,3 @@ using namespace std;
 int Mach_gun::amount = 1;
 
 
-
