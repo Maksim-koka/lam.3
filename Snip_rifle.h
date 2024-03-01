@@ -42,5 +42,5 @@ public:
     }
 };
 
-
+//
 #endif //INC_00P_SNIP_RIFLE_H

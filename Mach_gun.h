@@ -25,4 +25,5 @@ public:
         cout<< "Name: " << name << "\nWeight: " << weight << "\nSpeed of bullet" << speed_bullet <<endl;
     }
 };
+//
 #endif //INC_00P_MACH_GUN_H
