@@ -4,16 +4,18 @@
 #include "Mach_gun.h"
 
 int main() {
-    int type, increas, order;
+    int type, increas, order, special;
 
     cout<<"Welcome to our shop!\n Choose Type of rifle:\n1)Sniper Rifles\n2)Machine guns\n3)Pistols"<<endl;
     cin>>type;
 
     if(type == 1) {
-        Snip_rifle Barret(12.5, "Barret", 50);
+        const Snip_rifle Barret(12.5, "Barret", 50);
         Barret.show();
+        Snip_rifle num1{30}, num2{60};
+
     }else if (type == 2) {
-        Mach_gun Ak47(4.7, "AK47",78);
+        const Mach_gun Ak47(4.7, "AK47",78);
         Ak47.print();
         cout<<"Do you like to make the order?\n 1)Yes\n 2)No"<<endl;
         cin>>order;

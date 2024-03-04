@@ -10,6 +10,7 @@ using namespace std;
 
 class Snip_rifle {
 private:
+    int* patrons;
     float weight = 0;
     string name = nullptr;
     float calibr = 0;
@@ -19,7 +20,13 @@ private:
     }
 
 public:
-    Snip_rifle(float weight = 0, string name = nullptr, float calibr = 0);
+    Snip_rifle(int patrons) : patrons(new int){}
+
+    Snip_rifle(const Snip_rifle& other): patrons(new int(other.getPatrons())){}
+
+    Snip_rifle(float weight = 0, string name = nullptr, float calibr = 0){};
+
+    ~Snip_rifle();
 
     void setWeight(float weight) {
         this->weight = weight;
@@ -33,6 +40,9 @@ public:
     float getWeight() const {return weight;}
     string getName() const {return name;}
     float getCalibr() const {return calibr;}
+    int getPatrons() const {return *patrons;}
+
+    Snip_rifle operator+() const;
 
     void show() const;
 };
