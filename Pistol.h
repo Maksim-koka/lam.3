@@ -5,11 +5,12 @@
 #ifndef INC_00P_PISTOL_H
 #define INC_00P_PISTOL_H
 #include <iostream>
+#include "Auto_pistol.h"
 
 using namespace std;
 
 class Pistol {
-private:
+protected:
     float weight;
     string name;
     float bar_len;

@@ -2,6 +2,7 @@
 #include "Pistol.h"
 #include "Snip_rifle.h"
 #include "Mach_gun.h"
+#include "Auto_pistol.h"
 
 int main() {
     int type, increas, order, special;
@@ -39,6 +40,9 @@ int main() {
 
     }else
         cout<<"Error";
+
+    Auto_pistol glock;
+    glock.setAutomatic(1);
 
     return 0;
 }

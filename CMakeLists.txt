@@ -9,4 +9,9 @@ add_executable(00p main.cpp
         Snip_rifle.cpp
         Snip_rifle.h
         Mach_gun.cpp
-        Mach_gun.h)
+        Mach_gun.h
+        Auto_pistol.cpp
+        Auto_pistol.h
+        Mach_pistol.cpp
+        Mach_pistol.h
+)
