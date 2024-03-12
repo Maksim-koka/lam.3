@@ -33,4 +33,4 @@ public:
 };
 
 
-#endif //INC_00P_AUTO_PISTOL_Hsc
+#endif //INC_00P_AUTO_PISTOL_Hscs

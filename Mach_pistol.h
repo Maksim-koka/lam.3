@@ -34,4 +34,4 @@ public:
 };
 
 
-#endif //INC_00P_MACH_PISTOL_Hxd
+#endif //INC_00P_MACH_PISTOL_Hxds

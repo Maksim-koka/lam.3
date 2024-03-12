@@ -1,6 +1,6 @@
 //
 // Created by Msksim on 04s.03.2024.
-//c
+//cs
 #include "auto_pistol.h"
 
 

@@ -1,6 +1,6 @@
 //
 // Created by Msksim on 05.03.2024.
-//xd
+//xds
 
 #include "Mach_pistol.h"
 
