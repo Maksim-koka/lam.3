@@ -37,5 +37,5 @@ public:
 
 
 };
-//zdss
+//zdssx
 #endif //INC_00P_PISTOL_H
