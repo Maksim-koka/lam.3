@@ -1,6 +1,6 @@
 //
 // Created by Msksim on 29.02.2024.
-//sx
+//sxxx
 #include <iostream>
 
 using namespace std;
