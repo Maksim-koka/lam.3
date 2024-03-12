@@ -6,15 +6,11 @@
 using namespace std;
 
 #include "Pistol.h"
-
-Pistol::Pistol(Pistol&& powerful) noexcept
-: weight(powerful.weight), name(powerful.name), bar_len(powerful.bar_len) {
-
-    powerful.weight = 7.2;
-    powerful.name = "Digle";
-    powerful.bar_len = 23.5;
-    cout<< "Name: " <<  powerful.name << "\nWeight: " <<  powerful.weight << "\nCalibr: " << powerful.bar_len <<endl;
+Pistol::Pistol(Pistol&& powerful) noexcept : Pistol(powerful){
+    name = "Five-seven";
+    weight = 2.25;
 }
+
 
 void Pistol::show() {
     cout<< "Name: " << name << "\nWeight: " << weight << "\nCalibr: " << bar_len <<endl;

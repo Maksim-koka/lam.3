@@ -5,7 +5,6 @@
 #ifndef INC_00P_PISTOL_H
 #define INC_00P_PISTOL_H
 #include <iostream>
-#include "Auto_pistol.h"
 
 using namespace std;
 
@@ -14,9 +13,6 @@ protected:
     float weight;
     string name;
     float bar_len;
-    bool Is_Available() {
-        return true;
-    }
 
 public:
    Pistol(float weight, string name, float bar_len) {
@@ -24,14 +20,22 @@ public:
         this->name = name;
         this->bar_len = bar_len;
     }
+    Pistol(const Pistol& other) : bar_len(other.bar_len), weight(other.weight), name(other.name) {}
 
     Pistol(Pistol&& powerful) noexcept;
 
+    Pistol() : name(""), weight(0), bar_len(0) {};
+
+    ~Pistol(){}
+
     void show();
+
 
     friend ostream& operator<<(std::ostream& os, const Pistol& Pistol) {
         return os;
     }
+
+
 };
 //zds
 #endif //INC_00P_PISTOL_H

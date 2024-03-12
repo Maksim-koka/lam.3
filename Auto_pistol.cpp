@@ -1,8 +1,13 @@
 //
 // Created by Msksim on 04.03.2024.
 //
+#include "auto_pistol.h"
 
-#include "Auto_pistol.h"
+
+
+Auto_pistol::Auto_pistol(Auto_pistol&& powerful) noexcept : Pistol(powerful){
+    name = "Five-seven";
+}
 
 void Auto_pistol::setBulPerSec(int bulPerSec) {
     bul_per_sec = bulPerSec;

@@ -22,11 +22,8 @@ public:
         return amount;
     }
 
-    Mach_gun(float weight, string name, int speed_bullet) {
-        this->weight = weight;
-        this->name = name;
-        this->speed_bullet = speed_bullet;
-    }
+    Mach_gun(float weight, string name, int speed_bullet) :
+    weight(weight), name(name), speed_bullet(speed_bullet) { }
 
 
     friend ostream& operator<<(std::ostream& os, const Mach_gun& Mach_gun) {
