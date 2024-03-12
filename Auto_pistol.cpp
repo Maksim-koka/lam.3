@@ -1,5 +1,5 @@
 //
-// Created by Msksim on 04.03.2024.
+// Created by Msksim on 04s.03.2024.
 //
 #include "auto_pistol.h"
 
