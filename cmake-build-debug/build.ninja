@@ -85,6 +85,18 @@ build CMakeFiles/00p.dir/Mach_pistol.cpp.obj: CXX_COMPILER__00p_unscanned_Debug 
   OBJECT_DIR = CMakeFiles\00p.dir
   OBJECT_FILE_DIR = CMakeFiles\00p.dir
 
+build CMakeFiles/00p.dir/Ishop.cpp.obj: CXX_COMPILER__00p_unscanned_Debug C$:/Users/Msksim/CLionProjects/00p/Ishop.cpp || cmake_object_order_depends_target_00p
+  DEP_FILE = CMakeFiles\00p.dir\Ishop.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\00p.dir
+  OBJECT_FILE_DIR = CMakeFiles\00p.dir
+
+build CMakeFiles/00p.dir/Is_available.cpp.obj: CXX_COMPILER__00p_unscanned_Debug C$:/Users/Msksim/CLionProjects/00p/Is_available.cpp || cmake_object_order_depends_target_00p
+  DEP_FILE = CMakeFiles\00p.dir\Is_available.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\00p.dir
+  OBJECT_FILE_DIR = CMakeFiles\00p.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 00p
@@ -93,7 +105,7 @@ build CMakeFiles/00p.dir/Mach_pistol.cpp.obj: CXX_COMPILER__00p_unscanned_Debug 
 #############################################
 # Link the executable 00p.exe
 
-build 00p.exe: CXX_EXECUTABLE_LINKER__00p_Debug CMakeFiles/00p.dir/main.cpp.obj CMakeFiles/00p.dir/Pistol.cpp.obj CMakeFiles/00p.dir/Snip_rifle.cpp.obj CMakeFiles/00p.dir/Mach_gun.cpp.obj CMakeFiles/00p.dir/Auto_pistol.cpp.obj CMakeFiles/00p.dir/Mach_pistol.cpp.obj
+build 00p.exe: CXX_EXECUTABLE_LINKER__00p_Debug CMakeFiles/00p.dir/main.cpp.obj CMakeFiles/00p.dir/Pistol.cpp.obj CMakeFiles/00p.dir/Snip_rifle.cpp.obj CMakeFiles/00p.dir/Mach_gun.cpp.obj CMakeFiles/00p.dir/Auto_pistol.cpp.obj CMakeFiles/00p.dir/Mach_pistol.cpp.obj CMakeFiles/00p.dir/Ishop.cpp.obj CMakeFiles/00p.dir/Is_available.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\00p.dir

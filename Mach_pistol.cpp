@@ -16,3 +16,4 @@ void Mach_pistol::setBulPerSec(int bulPerSec) {
 void Mach_pistol::setAutomatic(bool automatic) {
     Mach_pistol::automatic = automatic;
 }
+

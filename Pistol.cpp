@@ -11,7 +11,3 @@ Pistol::Pistol(Pistol&& powerful) noexcept : Pistol(powerful){
     weight = 2.25;
 }
 
-
-void Pistol::show() {
-    cout<< "Name: " << name << "\nWeight: " << weight << "\nCalibr: " << bar_len <<endl;
-}

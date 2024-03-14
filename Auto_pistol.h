@@ -26,6 +26,30 @@ public:
 
     Auto_pistol(Auto_pistol&& powerful) noexcept;
 
+    virtual void show() const override{
+        Pistol::show();
+    }
+
+    virtual void Polygon(int shoot) override{
+        srand(time(NULL));
+        string scan;
+
+        cin >> scan;
+
+        if (scan == ".") {
+            while (shoot > 0) {
+                int ran = (rand() % 2) + 0;
+
+                if (ran == 1)
+                    cout << "x" << endl;
+                else
+                    cout << "0" << endl;
+                shoot--;
+            }
+        }
+        else
+            cout<<"Error";
+    }
 
     void setBulPerSec(int bulPerSec);
     void setAutomatic(bool automatic);

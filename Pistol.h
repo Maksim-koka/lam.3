@@ -6,6 +6,7 @@
 #define INC_00P_PISTOL_H
 #include <iostream>
 
+
 using namespace std;
 
 class Pistol {
@@ -26,10 +27,31 @@ public:
 
     Pistol() : name(""), weight(0), bar_len(0) {};
 
-    ~Pistol(){}
+    virtual ~Pistol(){}
 
-    void show();
+    virtual void show() const {
+        cout<< "Name: " << name << "\nWeight: " << weight << "\nbarrel length: " << bar_len <<endl;
+    };
 
+    virtual void Polygon(int shoot) {
+        srand(time(NULL));
+        string scan = ".";
+        while(scan == ".") {
+            cin >> scan;
+
+            if (shoot > 0) {
+                int ran = (rand() % 2) + 0;
+                if (ran == 1)
+                    cout << "x" << endl;
+                else
+                    cout << "0" << endl;
+                shoot--;
+            } else {
+                cout << "there is no more bullets" << endl;
+                break;
+            }
+        }
+    }
 
     friend ostream& operator<<(std::ostream& os, const Pistol& Pistol) {
         return os;

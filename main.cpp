@@ -4,26 +4,8 @@
 #include "Mach_gun.h"
 #include "Auto_pistol.h"
 #include "Mach_pistol.h"
+#include "Is_available.h"
 
-void Polygon(int shoot) {
-    srand(time(NULL));
-    string scan = ".";
-    while(scan == ".") {
-        cin >> scan;
-
-        if (shoot > 0) {
-            int ran = (rand() % 2) + 0;
-            if (ran == 1)
-                cout << "x" << endl;
-            else
-                cout << "0" << endl;
-            shoot--;
-        } else {
-            cout << "there is no more bullets" << endl;
-            break;
-        }
-    }
-}
 
 int main() {
     int type, order, bullets, choise;
@@ -58,8 +40,17 @@ int main() {
         Pistol PP(ent_weight, "PP", ent_bar);
         Auto_pistol Glock(ent_weight, "Glock", ent_bar, true);
         Mach_pistol Makarov(ent_weight,"Makarov",ent_bar, false);
+        Is_available available;
+        Ishop* av_i;
+        av_i = &available;
 
-        PP.show();
+        Pistol* ptr;
+        ptr = &PP;
+        ptr->show();
+
+//        Pistol* b = new Mach_pistol();
+//        b->show();
+//        delete b;
 
         cout<<"What next?"
               "\n 1)Choose more powerful"
@@ -71,12 +62,15 @@ int main() {
         switch(choise){
             case 1: {
                 Pistol power(move(PP));
-                power.show();
+                ptr = &power;
+                ptr->show();
+                av_i->print();
                 break;
             }
             case 2: {
-
-                Glock.show();
+                ptr = &Glock;
+                ptr->show();
+                av_i->print();
                 cout<<"What next?"
                       "\n 1)Choose more powerful"
                       "\n 2)Lets shoot"
@@ -85,25 +79,31 @@ int main() {
                 if(choise == 1) {
                     Auto_pistol Glock2 = move(Glock);
                     cout << "It is your choise" << endl;
-                    Glock2.show();
+                   Glock2.show();
+                    av_i->print();
                 }
                 break;
             }
             case 3: {
                 Mach_pistol Mak{Makarov};
-                Mak.show();
+                ptr = &Mak;
+                ptr->show();
+                av_i->print();
             }
         }
         cout << "So lets try it, how many bullets would you like to stole?";
         cin >> bullets;
-        Polygon(bullets);
 
-        Mach_pistol a = Makarov;
-        a.show();
+//        PP.Polygon(bullets);
 
+//        Mach_pistol a = Makarov;
+//        a.show();
+
+        ptr->Polygon(bullets);
 
     }else
         cout<<"Error";
+
 
     return 0;
 }

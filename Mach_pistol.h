@@ -20,6 +20,8 @@ public:
         this->automatic = automatic;
     };
 
+    Mach_pistol() : Pistol(), automatic(false){ }
+
     Mach_pistol& operator=(const Mach_pistol& other) {
         weight = other.weight;
         name = other.name;
@@ -30,6 +32,31 @@ public:
     Mach_pistol(const Mach_pistol& other);
     void setBulPerSec(int bulPerSec);
     void setAutomatic(bool automatic);
+
+    virtual void show() const override{
+        Pistol::show();
+    }
+
+    virtual void Polygon(int shoot) override{
+        srand(time(NULL));
+        string scan = ".";
+
+        while(scan == ".") {
+            cin >> scan;
+
+            if (shoot > 0) {
+                int ran = (rand() % 2) + 0;
+                if (ran == 1)
+                    cout << "x" << endl;
+                else
+                    cout << "0" << endl;
+                shoot--;
+            } else {
+                cout << "there is no more bullets" << endl;
+                break;
+            }
+        }
+    }
 
 };
 

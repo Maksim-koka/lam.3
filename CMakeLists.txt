@@ -14,4 +14,8 @@ add_executable(00p main.cpp
         Auto_pistol.h
         Mach_pistol.cpp
         Mach_pistol.h
+        Ishop.cpp
+        Ishop.h
+        Is_available.cpp
+        Is_available.h
 )
