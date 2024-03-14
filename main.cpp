@@ -108,4 +108,4 @@ int main() {
     return 0;
 }
 
-//sdsd
+//sdsd Static Method Bindingd
