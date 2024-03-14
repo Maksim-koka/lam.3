@@ -14,5 +14,5 @@ public:
     }
 };
 
-
+//d
 #endif //INC_00P_IS_AVAILABLE_H
