@@ -5,7 +5,7 @@
 #ifndef INC_00P_PISTOL_H
 #define INC_00P_PISTOL_H
 #include <iostream>
-
+#include <sstream>
 
 using namespace std;
 
@@ -23,7 +23,6 @@ public:
     }
     Pistol(const Pistol& other) : bar_len(other.bar_len), weight(other.weight), name(other.name) {}
 
-    Pistol(Pistol&& powerful) noexcept;
 
     Pistol() : name(""), weight(0), bar_len(0) {};
 
@@ -57,6 +56,33 @@ public:
         return os;
     }
 
+    string serialize() {
+        stringstream ss;
+        ss << name << "," << weight << "," << bar_len;
+        return ss.str();
+    }
+
+    void deserialize(const string& str) {
+        stringstream ss(str);
+        getline(ss, name, ',');
+        ss >> weight;
+        if (ss.peek() == ',') {
+            ss.ignore();
+        }
+        ss >> bar_len;
+    }
+
+    void setWeight(float weight);
+
+    void setName(const string &name);
+
+    void setBarLen(float barLen);
+
+    float getWeight() const;
+
+    const string &getName() const;
+
+    float getBarLen() const;
 
 };
 //zdssxxxsx

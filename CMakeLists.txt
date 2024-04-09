@@ -18,4 +18,6 @@ add_executable(00p main.cpp
         Ishop.h
         Is_available.cpp
         Is_available.h
+        пнрплжролж.cpp
+        пнрплжролж.h
 )

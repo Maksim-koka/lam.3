@@ -6,8 +6,28 @@
 using namespace std;
 
 #include "Pistol.h"
-Pistol::Pistol(Pistol&& powerful) noexcept : Pistol(powerful){
-    name = "Five-seven";
-    weight = 2.25;
+
+void Pistol::setWeight(float weight) {
+    Pistol::weight = weight;
+}
+
+void Pistol::setName(const string &name) {
+    Pistol::name = name;
+}
+
+void Pistol::setBarLen(float barLen) {
+    bar_len = barLen;
+}
+
+float Pistol::getWeight() const {
+    return weight;
+}
+
+const string &Pistol::getName() const {
+    return name;
+}
+
+float Pistol::getBarLen() const {
+    return bar_len;
 }
 
