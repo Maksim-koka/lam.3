@@ -37,7 +37,7 @@ int main() {
 //ddwd
 //d
 //d
-//
+//wdw
 
 //    Pistol person(35, "John Doe", 3);
 //
