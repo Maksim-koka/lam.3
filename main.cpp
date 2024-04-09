@@ -35,7 +35,7 @@ int main() {
 
 //dde
 //ddwd
-//d
+//dwdw
 //d
 //wdw
 
